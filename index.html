@@ -11,27 +11,26 @@
 <body>
 <h1>Tesla Model Punchase</h1>
 <p id="description">Fill details below to complete your Tesla order</p>
-
 <form action="" id="survey-form"> 
-<fieldset>
-  <label id="name-label"> Name <input type="text" id="name" name="name" required></label>
-  <label id="number-label"> Age <input type="number" id="number" name="number" min=18 max=120 required></label>
-  <label id="email-label"> Email <input type="email" id="email" name= "email" required></label>
-  <label> Select Model 
-    <select id="select" name="select">
-<option> A </option>
-<option> B </option> 
-<option> C </option>
-    </select> 
-    </label>
-    </fieldset>
 
+<fieldset>
+  <label id="name-label"> Name <input type="text" id="name" name="name" placeholder= "Enter your name" required></label>
+  <label id="number-label"> Age <input type="number" id="number" name="number" min=18 max=120 placeholder="Enter your age" required></label>
+  <label id="email-label"> Email <input type="email" id="email" name= "email" placeholder="Enter your email address" required></label>
+  <label> Select Model 
+<select id="dropdown" name="select">
+  <option> A </option>
+  <option> B </option> 
+  <option> C </option>
+</select> 
+</label>
+</fieldset>
 
 <fieldset>  
-    <label> Model Color <p>Black</p> <input type="radio" name="Black"></label>
-    <label> Add features</label>
-    <label> Additional Comments</label>
-       </fieldset>
+  <label> Model Color <br><input type="radio" name="color" value="Black"> Black <br><input type="radio" name="color" value="Red"> Red <br><input type="radio" name="color" value="Blue"> Blue <br></label>
+  <label><br> Add features <br>     </label>
+  <label><br> Additional Comments </label>
+ </fieldset>
 
 
 
@@ -43,5 +42,4 @@
 
 
 </body>
-
 </html>
