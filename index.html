@@ -11,33 +11,49 @@
 <body>
 <h1>Tesla Model Punchase</h1>
 <p id="description">Fill details below to complete your Tesla order</p>
-<form action="" id="survey-form"> 
+<div class="form"><form action="" id="survey-form"> 
+
+<img src="IMG_0835.jpg">
 
 <fieldset>
   <label id="name-label"> Name <input type="text" id="name" name="name" placeholder= "Enter your name" required></label>
   <label id="number-label"> Age <input type="number" id="number" name="number" min=18 max=120 placeholder="Enter your age" required></label>
   <label id="email-label"> Email <input type="email" id="email" name= "email" placeholder="Enter your email address" required></label>
-  <label> Select Model 
-<select id="dropdown" name="select">
-  <option> A </option>
-  <option> B </option> 
-  <option> C </option>
-</select> 
-</label>
 </fieldset>
 
-<fieldset>  
-  <label> Model Color <br><input type="radio" name="color" value="Black"> Black <br><input type="radio" name="color" value="Red"> Red <br><input type="radio" name="color" value="Blue"> Blue <br></label>
-  <label><br> Add features <br>     </label>
-  <label><br> Additional Comments </label>
+<fieldset> 
+  <label> Select Model 
+    <select id="dropdown" name="select">
+      <option> A </option>
+      <option> B </option> 
+      <option> C </option>
+    </select><br>
+    </label> 
+  <label><br> Model Color <br><input type="radio" name="color" value="Black"> Black <br><input type="radio" name="color" value="Red"> Red <br><input type="radio" name="color" value="Blue"> Blue <br></label>
+  <label><br> Add features <br> <input type="checkbox"> A <br><input type="checkbox"> B <br><input type="checkbox"> C <br></label>
+
+
  </fieldset>
+
+<fieldset>
+<label style="font-size: 18px"> <b> Payment</b> <img src="styles.jpg" alt="Credit Card Logos" class="logo1"><br></label>
+<label> Name on Card: <br> <input type="text" placeholder="Mr. Elon Musk"></label>
+<label> Credit Card Number: <br> <input type="tel" pattern="[0-9]" placeholder="XXXX-XXXX-XXXX-XXXX"> <br></label> 
+<label> CVV <br> <input type="tel" pattern="[0-9]" placeholder="1234" > <br></label>
+<label> Expiration <br>     <br></label>
+
+
+
+<label> Additional Comments </label>
+</fieldset>
+
 
 
 
 
 
 </form>
-
+</div>
 
 
 

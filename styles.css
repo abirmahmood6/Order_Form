@@ -1,13 +1,50 @@
+body {
+    width: 100%;
+}
+    
+    
+    h1, p { 
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+img { 
+    position: relative;
+    left: 800px;
+   top: 600px;
+  
+  }
+
 input{
  width:100%;
 }
 
 form{
+ margin: 0 auto;
  min-width: 300px;
  max-width: 500px;
+ position: relative;
+ top: -400px;
+ right: 500px;
+
 }
 
 input[type="radio"] {
  width: unset; 
 }
 
+input[type="checkbox"] {
+    width: unset;
+}
+
+
+.logo1 {
+    max-width: 120px;
+    width: 120px;
+    height: 26px;
+    position: relative;
+    top: 6px;
+    left: 260px;
+}
