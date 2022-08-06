@@ -13,7 +13,7 @@
 <p id="description">Fill details below to complete your Tesla order</p>
 <div class="form"><form action="" id="survey-form"> 
 
-<img src="IMG_0835.jpg">
+<img src="IMG_0835.jpg" alt="Car Image" class="carimage">
 
 <fieldset>
   <label id="name-label"> Name <input type="text" id="name" name="name" placeholder= "Enter your name" required></label>
@@ -24,37 +24,59 @@
 <fieldset> 
   <label> Select Model 
     <select id="dropdown" name="select">
-      <option> A </option>
+      <option> Cyber Truck </option>
       <option> B </option> 
       <option> C </option>
     </select><br>
     </label> 
-  <label><br> Model Color <br><input type="radio" name="color" value="Black"> Black <br><input type="radio" name="color" value="Red"> Red <br><input type="radio" name="color" value="Blue"> Blue <br></label>
-  <label><br> Add features <br> <input type="checkbox"> A <br><input type="checkbox"> B <br><input type="checkbox"> C <br></label>
-
-
+  <label><br> Model Color <br><input type="radio" name="color" value="Black"> Black <br><input type="radio" name="color" value="Red"> White <br><input type="radio" name="color" value="Blue"> Red <br></label>
+  <label><br> Add features <br> <input type="checkbox"> Full Self-driving (Autopilot)- $10,000 <br><input type="checkbox"> Dual Motor (All wheel drive)- $9,000 <br><input type="checkbox"> Performance Plus (Enhanced battery)- $7,500 <br></label>
  </fieldset>
 
 <fieldset>
 <label style="font-size: 18px"> <b> Payment</b> <img src="styles.jpg" alt="Credit Card Logos" class="logo1"><br></label>
 <label> Name on Card: <br> <input type="text" placeholder="Mr. Elon Musk"></label>
 <label> Credit Card Number: <br> <input type="tel" pattern="[0-9]" placeholder="XXXX-XXXX-XXXX-XXXX"> <br></label> 
-<label> CVV <br> <input type="tel" pattern="[0-9]" placeholder="1234" > <br></label>
-<label> Expiration <br>     <br></label>
+<label> CVV: <br> <input type="tel" pattern="[0-9]" placeholder="1234" > <br></label>
+<label> Expiration:  
+ <select name="expireMM" id="expireMM">
+  <option value="00">Month</option>
+  <option value="01">Jan</option>
+  <option value="02">Feb</option>
+  <option value="03">Mar</option>
+  <option value="04">Apr</option>
+  <option value="05">May</option>
+  <option value="06">Jun</option>
+  <option value="07">Jul</option>
+  <option value="08">Aug</option>
+  <option value="09">Sep</option>
+  <option value="10">Oct</option>
+  <option value="11">Nov</option>
+  <option value="12">Dec</option>
+ </select>  
 
+ <select name="expireYY" id="expireYY"> 
+  <option>Year</option>
+  <option>2022</option>
+  <option>2023</option>
+  <option>2024</option>
+  <option>2025</option>
+  <option>2026</option>
+  <option>2027</option>
+  <option>2028</option>
+  <option>2029</option>
+  <option>2030</option>
+ </select> <br><br> </label>
 
-
-<label> Additional Comments </label>
+<label> Additional Comments <br></label>
+<textarea rows=4 cols=25> </textarea>
 </fieldset>
 
-
-
-
+<input type="submit" name="submit" id="submit">
 
 
 </form>
 </div>
-
 
 
 </body>

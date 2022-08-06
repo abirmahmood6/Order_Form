@@ -1,21 +1,19 @@
 body {
-    width: 100%;
+  
 }
     
-    
-    h1, p { 
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 50px;
+h1, p { 
+ margin: 0 auto;
+ text-align: center;
+ position: relative;
+ top: 50px;
 }
 
-img { 
-    position: relative;
-    left: 800px;
-   top: 600px;
-  
-  }
+.carimage { 
+ position: relative;
+ left: 800px;
+ top: 650px;  
+}
 
 input{
  width:100%;
@@ -26,25 +24,53 @@ form{
  min-width: 300px;
  max-width: 500px;
  position: relative;
- top: -400px;
+ top: -540px;
  right: 500px;
-
 }
 
 input[type="radio"] {
  width: unset; 
+ accent-color: rgb(196, 33, 33);
+ width: 20px;
 }
 
 input[type="checkbox"] {
-    width: unset;
+ width: unset;
+ accent-color: red;
+ width: 20px;
 }
 
-
 .logo1 {
-    max-width: 120px;
-    width: 120px;
-    height: 26px;
-    position: relative;
-    top: 6px;
-    left: 260px;
+ max-width: 120px;
+ width: 120px;
+ height: 26px;
+ position: relative;
+ top: 6px;
+ left: 260px;
+}
+
+select {
+ background-color: rgba(0, 0, 0, 0.875);
+ color: white;   
+}
+
+#submit{
+ position:relative;
+ top: 50px;
+ left:100%;
+ background-color: white;
+ padding: 15px 32px;
+ display: inline-block;
+ font-size: 16px;
+ text-decoration: none;
+ border: 2px solid black;
+ font-style: italic;
+ transition: 0s background-color color;
+ border-radius: 20px;
+}
+
+#submit:hover {
+ background-color: black;
+ transition-delay: 0.2s;
+ color: white;
 }
