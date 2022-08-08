@@ -1,5 +1,11 @@
+html {
+ height: 100%;
+}
+
 body {
-  
+ min-height: 100%;
+ margin: 0;
+ padding: 0;
 }
     
 h1, p { 
@@ -7,16 +13,37 @@ h1, p {
  text-align: center;
  position: relative;
  top: 50px;
+ font-family: Cochin;
+}
+
+p {
+ margin-top: -20px;
+}
+
+.teslalogo {
+ width:350px;
+ height: 120px;
+ margin-top: -30px;
 }
 
 .carimage { 
- position: relative;
+ position: absolute;
  left: 800px;
- top: 650px;  
+}
+
+.carpic2{
+width: 200px;
+height: 110px;
+position: absolute;
+left: 260px;
+top: 220px;
 }
 
 input{
  width:100%;
+ border: none;
+ border-bottom: 1px solid #808080 ;
+/*do some border work here */
 }
 
 form{
@@ -24,19 +51,19 @@ form{
  min-width: 300px;
  max-width: 500px;
  position: relative;
- top: -540px;
+ top: 140px;
  right: 500px;
 }
 
 input[type="radio"] {
  width: unset; 
- accent-color: rgb(196, 33, 33);
+ accent-color: gray;
  width: 20px;
 }
 
 input[type="checkbox"] {
  width: unset;
- accent-color: red;
+ accent-color: gray;
  width: 20px;
 }
 
@@ -54,10 +81,10 @@ select {
  color: white;   
 }
 
-#submit{
+button{
  position:relative;
- top: 50px;
- left:100%;
+ top: 18px;
+ left:675px;
  background-color: white;
  padding: 15px 32px;
  display: inline-block;
@@ -67,10 +94,21 @@ select {
  font-style: italic;
  transition: 0s background-color color;
  border-radius: 20px;
+ margin-top: -15px;
 }
 
-#submit:hover {
- background-color: black;
- transition-delay: 0.2s;
+button:hover {
+ background-color: rgba(0,0,0,90%);
+ transition-delay: 0.1s;
  color: white;
+}
+
+fieldset {
+ border: none;
+ border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+ width: 90%;
+}
+
+#lastfs {
+ border: none;
 }

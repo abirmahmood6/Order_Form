@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title" >Tesla - Order Form</title>
+    <title id="maintitle" >Tesla | Order Form</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-<h1>Tesla Model Punchase</h1>
+<h1 id="title"><img src="IMG_1432.jpg" alt="teslalogo" class="teslalogo"></h1>
+
 <p id="description">Fill details below to complete your Tesla order</p>
-<div class="form"><form action="" id="survey-form"> 
+<form action="https://www.tesla.com/modelx" id="survey-form"> 
 
 <img src="IMG_0835.jpg" alt="Car Image" class="carimage">
 
 <fieldset>
+  <label style="font-size: 17px"> <b>Personal Information</b><br><br> </label>
   <label id="name-label"> Name <input type="text" id="name" name="name" placeholder= "Enter your name" required></label>
   <label id="number-label"> Age <input type="number" id="number" name="number" min=18 max=120 placeholder="Enter your age" required></label>
   <label id="email-label"> Email <input type="email" id="email" name= "email" placeholder="Enter your email address" required></label>
+  <label id="contact-label"> Phone Number (Optional) <input type="tel" id="contact" name="contact" placeholder="Enter your phone number"> </label>
 </fieldset>
 
 <fieldset> 
-  <label> Select Model 
+  <label style="font-size: 16px"> <b>Select Model</b> 
     <select id="dropdown" name="select">
       <option> Cyber Truck </option>
-      <option> B </option> 
-      <option> C </option>
+      <option> Model S </option> 
+      <option> Model X </option>
     </select><br>
+    <img src="Screen Shot 2022-08-07 at 3.03.45 AM.png" alt="car assemble pic" class="carpic2">
     </label> 
   <label><br> Model Color <br><input type="radio" name="color" value="Black"> Black <br><input type="radio" name="color" value="Red"> White <br><input type="radio" name="color" value="Blue"> Red <br></label>
   <label><br> Add features <br> <input type="checkbox"> Full Self-driving (Autopilot)- $10,000 <br><input type="checkbox"> Dual Motor (All wheel drive)- $9,000 <br><input type="checkbox"> Performance Plus (Enhanced battery)- $7,500 <br></label>
  </fieldset>
 
-<fieldset>
-<label style="font-size: 18px"> <b> Payment</b> <img src="styles.jpg" alt="Credit Card Logos" class="logo1"><br></label>
-<label> Name on Card: <br> <input type="text" placeholder="Mr. Elon Musk"></label>
-<label> Credit Card Number: <br> <input type="tel" pattern="[0-9]" placeholder="XXXX-XXXX-XXXX-XXXX"> <br></label> 
-<label> CVV: <br> <input type="tel" pattern="[0-9]" placeholder="1234" > <br></label>
+<fieldset id="lastfs">
+<label style="font-size: 17px"> <b> Payment</b> <img src="styles.jpg" alt="Credit Card Logos" class="logo1"><br></label>
+<label><br> Name on Card: <br> <input type="text" placeholder="Mr. Elon Musk" required></label>
+<label> Credit Card Number: <br> <input type="tel"  placeholder="XXXX-XXXX-XXXX-XXXX" required> <br></label> 
+<label> CVV: <br> <input type="tel" placeholder="1234" required> <br></label>
 <label> Expiration:  
- <select name="expireMM" id="expireMM">
+ <select name="expireMM" id="expireMM" >
   <option value="00">Month</option>
   <option value="01">Jan</option>
   <option value="02">Feb</option>
@@ -55,7 +59,7 @@
   <option value="12">Dec</option>
  </select>  
 
- <select name="expireYY" id="expireYY"> 
+ <select name="expireYY" id="expireYY" > 
   <option>Year</option>
   <option>2022</option>
   <option>2023</option>
@@ -72,11 +76,9 @@
 <textarea rows=4 cols=25> </textarea>
 </fieldset>
 
-<input type="submit" name="submit" id="submit">
-
+<button type="submit" name="submit" id="submit"> Place Order </button>
 
 </form>
-</div>
 
 
 </body>
