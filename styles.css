@@ -1,11 +1,5 @@
-html {
- height: 100%;
-}
-
 body {
- min-height: 100%;
- margin: 0;
- padding: 0;
+ margin: 0 auto;
 }
     
 h1, p { 
@@ -13,11 +7,6 @@ h1, p {
  text-align: center;
  position: relative;
  top: 50px;
- font-family: Cochin;
-}
-
-p {
- margin-top: -20px;
 }
 
 .teslalogo {
@@ -26,33 +15,42 @@ p {
  margin-top: -30px;
 }
 
+p {
+ margin-top: -25px;
+ font-family: Courier;
+}
+
 .carimage { 
  position: absolute;
  left: 800px;
 }
 
-.carpic2{
-width: 200px;
-height: 110px;
-position: absolute;
-left: 260px;
-top: 220px;
+form {
+ margin: 0 auto;
+ min-width: 300px;
+ max-width: 550px;
+ position: relative;
+ top: 140px;
+ right: 480px;
 }
 
-input{
+.carimage2 {
+ width: 200px;
+ height: 110px;
+ position: absolute;
+ left: 300px;
+ top: 220px;
+}
+
+.headline {
+ font-family: helvetica;
+ font-size: 15px;
+}
+
+input {
  width:100%;
  border: none;
  border-bottom: 1px solid #808080 ;
-/*do some border work here */
-}
-
-form{
- margin: 0 auto;
- min-width: 300px;
- max-width: 500px;
- position: relative;
- top: 140px;
- right: 500px;
 }
 
 input[type="radio"] {
@@ -67,13 +65,12 @@ input[type="checkbox"] {
  width: 20px;
 }
 
-.logo1 {
- max-width: 120px;
+.payment_logo {
  width: 120px;
  height: 26px;
  position: relative;
  top: 6px;
- left: 260px;
+ left: 300px;
 }
 
 select {
@@ -81,34 +78,32 @@ select {
  color: white;   
 }
 
-button{
+fieldset {
+ border: none;
+ border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+ width: 90%;
+}
+   
+#lastfs {
+ border: none;
+}
+
+button {
  position:relative;
- top: 18px;
- left:675px;
+ top: 10px;
+ left:650px;
  background-color: white;
- padding: 15px 32px;
- display: inline-block;
+ padding: 15px 42px;
  font-size: 16px;
- text-decoration: none;
  border: 2px solid black;
  font-style: italic;
  transition: 0s background-color color;
- border-radius: 20px;
- margin-top: -15px;
+ border-radius: 30px;
+ margin-top: -10px;
 }
 
 button:hover {
  background-color: rgba(0,0,0,90%);
  transition-delay: 0.1s;
  color: white;
-}
-
-fieldset {
- border: none;
- border-bottom: 2px solid rgba(0, 0, 0, 0.7);
- width: 90%;
-}
-
-#lastfs {
- border: none;
 }
