@@ -1,6 +1,15 @@
 body {
  margin: 0 auto;
 }
+
+div { 
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+    min-width: 480px;
+    padding-bottom: 210px;
+    padding-right: 130px;
+}
     
 h1, p { 
  margin: 0 auto;
@@ -90,7 +99,7 @@ fieldset {
 
 button {
  position:relative;
- top: 10px;
+ top: -10px;
  left:650px;
  background-color: white;
  padding: 15px 42px;
