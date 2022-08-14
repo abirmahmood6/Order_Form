@@ -1,11 +1,13 @@
 body {
  margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
 
-div { 
+.container { 
+   
     width: 100%;
-    overflow: hidden;
     max-width: 1920px;
     min-width: 480px;
     padding-bottom: 210px;
@@ -34,26 +36,24 @@ p {
  font-family: Courier;
 }
 
-.carimage { 
- position: absolute;
- left: 800px;
-}
+
 
 form {
  margin: 0 auto;
- min-width: 300px;
- max-width: 550px;
+ min-width: 480px;
+ width: 550px;
  position: relative;
  top: 140px;
- right: 480px;
+
+
 }
 
-.carimage2 {
- width: 200px;
- height: 110px;
+.carimage {
+ width: 240px;
+ height: 180px;
  position: absolute;
  left: 300px;
- top: 220px;
+ top: 208px;
 }
 
 .headline {
@@ -105,7 +105,7 @@ fieldset {
 button {
  position:relative;
  top: -10px;
- left:650px;
+ left:350px;
  background-color: white;
  padding: 15px 42px;
  font-size: 16px;
@@ -121,3 +121,5 @@ button:hover {
  transition-delay: 0.1s;
  color: white;
 }
+
+
