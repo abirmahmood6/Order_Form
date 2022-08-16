@@ -1,4 +1,5 @@
-# Order_Form
-A Tesla order form created using HTML and CSS 
+### Order_Form
+A responsive Tesla order form created using HTML and CSS 
 
-Link: https://abirmahmood6.github.io/Order_Form/
+### See it live!
+Navigate [Here](https://abirmahmood6.github.io/Order_Form/) to see it live!
